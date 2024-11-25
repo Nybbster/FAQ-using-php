@@ -1,0 +1,59 @@
+
+
+summary {
+    padding: .5em 1.3rem;
+    list-style: none;
+    text-align: center;
+    max-width: 350px;
+    transition: height 1s ease;
+    border: black 2px solid;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary:after{
+    content: "\002B";
+    
+  }
+  details{
+    text-align: center;
+    border: black solid 2px;
+    width: 350px;
+    margin-top:15px;
+    
+   
+
+  }
+ 
+  details[open] summary:after{
+    content: "\00D7";
+   
+    
+  }
+ 
+
+
+body{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+    height: 100vh;
+  
+
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    top: 0px;
+}
+form>button{
+    align-self: center;
+    max-width: 100px;
+    
+}
